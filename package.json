@@ -1,0 +1,22 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build & node ./dist/index.js",
+    "dev": "npx nodemon",
+    "build": "npm run clear & tsc",
+    "clear": "rimraf ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "22.13.0",
+    "nodemon": "3.1.9",
+    "rimraf": "6.0.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.7.3"
+  }
+}
